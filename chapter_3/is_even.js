@@ -43,8 +43,8 @@ function isEven(number) {
   }
 }
 
-isEven(5)
-isEven(4)
+isEven(50)
+isEven(75)
 isEven(0)
 isEven(1)
 isEven(-1)
