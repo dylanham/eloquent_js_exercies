@@ -1,5 +1,5 @@
-function range(start, end, step) {
-  for (i = start, results = []; i <= end;) {
+var range = function(start, end, step) {
+  for (var i = start, results = []; i <= end;) {
     results.push(i);
     if (step != null) {
       i += step
@@ -12,8 +12,8 @@ function range(start, end, step) {
 
 console.log(range(1, 10, 3))
 
-function sum(arrayOfNumbers) {
-  for (i = 0, results = 0; i < arrayOfNumbers.length; i++) {
+var sum = function(arrayOfNumbers) {
+  for (var i = 0, results = 0; i < arrayOfNumbers.length; i++) {
     results += arrayOfNumbers[i];
   }
   return results;

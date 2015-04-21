@@ -16,6 +16,6 @@ for (i = 0; i < 7; i++) {
 
 // Exercise 1 using for loop ch2. and length solution 3
 
-for (triangle = '#'; triangle.length < 8; triangle += '#') {
+for (var triangle = '#'; triangle.length < 8; triangle += '#') {
   console.log(triangle);
 }

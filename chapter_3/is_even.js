@@ -20,6 +20,7 @@ var isEven = function(number) {
 }
 
 
+
 console.log(isEven(50));
 console.log(isEven(75));
 console.log(isEven(0));

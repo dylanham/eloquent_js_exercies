@@ -1,4 +1,4 @@
-function isOdd(number) {
+var isEven = function(number) {
   if (number % 2 === 0) {
     return true;
   } else {
@@ -7,18 +7,16 @@ function isOdd(number) {
 }
 
 var boardSize = 8;
-
-var checkerboard = "";
-
+var chessboard = "";
 for (height = 0; height < boardSize; height++) {
   for (width = 0; width < boardSize; width++) {
-    if (isOdd(height + width)){
-      checkerboard += " ";
+    if (isEven(height + width)){
+      chessboard += " ";
     } else {
-      checkerboard += "#";
+      chessboard += "#";
     }
   }
-  checkerboard += "\n";
+  chessboard += "\n";
 }
 
-console.log(checkerboard);
+console.log(chessboard);
