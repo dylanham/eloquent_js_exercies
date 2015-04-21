@@ -1,53 +1,30 @@
 // non recursive solution
-function isEven(number) {
-  if (number % 2 === 0) {
-    console.log(true)
-  } else {
-    console.log(false)
-  }
-}
+// var isEven = function(number) {
+//   if (number % 2 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-//  recursive solution absolute value takes care of negative numbers
-function isEven(number) {
+ // recursive solution absolute value takes care of negative numbers
+var isEven = function(number) {
   number = Math.abs(number)
   if (number === 0) {
-    console.log(true);
+    return true;
   } else if (number === 1) {
-    console.log(false);
+    return false;
   } else {
-    isEven(number - 2);
+    return isEven(number - 2);
   }
 }
 
-//recursive solution not using absolute value
-function isEven(number) {
-  var numberIsEven = (number === 0);
-  var numberIsOdd = (number === 1);
 
-  if (number > 0) {
-    if (numberIsEven) {
-      console.log(true);
-    } else if (numberIsOdd) {
-      console.log(false);
-    } else {
-      isEven(number - 2);
-    }
-  } else {
-    if (numberIsEven) {
-      console.log(true);
-    } else if (numberIsOdd) {
-      console.log(false);
-    } else {
-      isEven(number + 2);
-    }
-  }
-}
-
-isEven(50)
-isEven(75)
-isEven(0)
-isEven(1)
-isEven(-1)
-isEven(-2)
-isEven(100)
-isEven(-1001)
+console.log(isEven(50));
+console.log(isEven(75));
+console.log(isEven(0));
+console.log(isEven(1));
+console.log(isEven(-1));
+console.log(isEven(-2));
+console.log(isEven(100));
+console.log(isEven(-1001));

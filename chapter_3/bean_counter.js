@@ -1,5 +1,5 @@
 // while loop solution
-function countChar(string, character) {
+var countChar = function(string, character) {
   var results = 0;
   var i = 0;
 
@@ -11,18 +11,19 @@ function countChar(string, character) {
       i++;
     }
   }
-  console.log(results)
+  return results
 }
 
 // for loop solution
-function countChar(string, character) {
-  for (results = 0, i = 0; i < string.length; i++) {
+ var countChar = function(string, character) {
+  var results = 0
+  for (var i = 0; i < string.length; i++) {
     if (string.charAt(i) === character) {
       results++;
     }
   }
-  console.log(results)
+  return results
 }
 
-countChar('thisBshouldBcountedtwice', 'c')
-countChar('seven B B B B B B B\'s', 'v')
+console.log(countChar('thisBshouldBcountedtwice', 'B'))
+console.log(countChar('seven B B B B B B B\'s', 'B'))
