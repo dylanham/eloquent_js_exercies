@@ -3,7 +3,7 @@ var arrayToList = function(array) {
     if (i === array.length -1) {
       var list = {value: array[i], rest: null};
     } else {
-      var list = {value: array[i], rest: list};
+      list = {value: array[i], rest: list};
     }
   }
   return list;
@@ -27,7 +27,6 @@ var nth = function(list, number) {
   for (var hash = list; hash; hash = hash.rest) {
     if (nodeCount === number) {
       return hash;
-      nodeCount++;
     } else {
       nodeCount++;
     }
