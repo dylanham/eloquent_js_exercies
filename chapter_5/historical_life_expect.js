@@ -10,7 +10,7 @@ var findCenturies = function(object) {
   object.filter(function(person){
     results.push(Math.ceil(person.died / 100));
   });
-  return results.sort();
+  return results;
 };
 
 var unFilteredArray = findCenturies(ancestry);
